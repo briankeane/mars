@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B4A4A761F67275F0072AF1A /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4A4A751F67275F0072AF1A /* APIKeys.swift */; };
 		4B92E46D1F6717F900BEB077 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B92E46C1F6717F900BEB077 /* AppDelegate.swift */; };
 		4B92E46F1F6717F900BEB077 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B92E46E1F6717F900BEB077 /* ViewController.swift */; };
 		4B92E4721F6717F900BEB077 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B92E4701F6717F900BEB077 /* Main.storyboard */; };
@@ -19,6 +18,7 @@
 		D48868891F671C1000BB12E5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48868881F671C1000BB12E5 /* MainViewController.swift */; };
 		D488688B1F671C2F00BB12E5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488688A1F671C2F00BB12E5 /* DetailViewController.swift */; };
 		D488688D1F671E4000BB12E5 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488688C1F671E4000BB12E5 /* PhotoInfo.swift */; };
+		D48868931F672C6D00BB12E5 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48868921F672C6D00BB12E5 /* APIKeys.swift */; };
 		EF522ABFFC7564D16471516D /* Pods_marsPics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002AB9EA153780A135AE2E64 /* Pods_marsPics.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,6 @@
 		01ECADC1E9B540A9C0128C86 /* Pods-marsPicsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marsPicsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-marsPicsTests/Pods-marsPicsTests.release.xcconfig"; sourceTree = "<group>"; };
 		34FD250E12B85A72DA746484 /* Pods-marsPicsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marsPicsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-marsPicsTests/Pods-marsPicsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4270D9BF6E04C672E5ED2835 /* Pods-marsPics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marsPics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-marsPics/Pods-marsPics.debug.xcconfig"; sourceTree = "<group>"; };
-		4B4A4A751F67275F0072AF1A /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		4B92E4691F6717F900BEB077 /* marsPics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marsPics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B92E46C1F6717F900BEB077 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B92E46E1F6717F900BEB077 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		D48868881F671C1000BB12E5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D488688A1F671C2F00BB12E5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D488688C1F671E4000BB12E5 /* PhotoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
+		D48868921F672C6D00BB12E5 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 				4B92E4751F6717F900BEB077 /* LaunchScreen.storyboard */,
 				4B92E4781F6717F900BEB077 /* Info.plist */,
 				4B92E48C1F6723B300BEB077 /* API.swift */,
-				4B4A4A751F67275F0072AF1A /* APIKeys.swift */,
+				D48868921F672C6D00BB12E5 /* APIKeys.swift */,
 			);
 			path = marsPics;
 			sourceTree = "<group>";
@@ -360,7 +360,7 @@
 			files = (
 				D48868891F671C1000BB12E5 /* MainViewController.swift in Sources */,
 				4B92E46F1F6717F900BEB077 /* ViewController.swift in Sources */,
-				4B4A4A761F67275F0072AF1A /* APIKeys.swift in Sources */,
+				D48868931F672C6D00BB12E5 /* APIKeys.swift in Sources */,
 				4B92E48D1F6723B300BEB077 /* API.swift in Sources */,
 				4B92E46D1F6717F900BEB077 /* AppDelegate.swift in Sources */,
 				D488688B1F671C2F00BB12E5 /* DetailViewController.swift in Sources */,
