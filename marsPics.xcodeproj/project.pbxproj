@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B92E46D1F6717F900BEB077 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B92E46C1F6717F900BEB077 /* AppDelegate.swift */; };
+		4B92E46F1F6717F900BEB077 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B92E46E1F6717F900BEB077 /* ViewController.swift */; };
+		4B92E4721F6717F900BEB077 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B92E4701F6717F900BEB077 /* Main.storyboard */; };
+		4B92E4741F6717F900BEB077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B92E4731F6717F900BEB077 /* Assets.xcassets */; };
+		4B92E4771F6717F900BEB077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B92E4751F6717F900BEB077 /* LaunchScreen.storyboard */; };
+		4B92E4821F6717F900BEB077 /* marsPicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B92E4811F6717F900BEB077 /* marsPicsTests.swift */; };
+		92E4FDE525B09241B9992D0D /* Pods_marsPicsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A066468E4890A51BF00C24DC /* Pods_marsPicsTests.framework */; };
+		EF522ABFFC7564D16471516D /* Pods_marsPics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002AB9EA153780A135AE2E64 /* Pods_marsPics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B92E47E1F6717F900BEB077 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B92E4611F6717F900BEB077 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B92E4681F6717F900BEB077;
+			remoteInfo = marsPics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002AB9EA153780A135AE2E64 /* Pods_marsPics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marsPics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01ECADC1E9B540A9C0128C86 /* Pods-marsPicsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marsPicsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-marsPicsTests/Pods-marsPicsTests.release.xcconfig"; sourceTree = "<group>"; };
+		34FD250E12B85A72DA746484 /* Pods-marsPicsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marsPicsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-marsPicsTests/Pods-marsPicsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4270D9BF6E04C672E5ED2835 /* Pods-marsPics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marsPics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-marsPics/Pods-marsPics.debug.xcconfig"; sourceTree = "<group>"; };
+		4B92E4691F6717F900BEB077 /* marsPics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marsPics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B92E46C1F6717F900BEB077 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B92E46E1F6717F900BEB077 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B92E4711F6717F900BEB077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B92E4731F6717F900BEB077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B92E4761F6717F900BEB077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B92E4781F6717F900BEB077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B92E47D1F6717F900BEB077 /* marsPicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marsPicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B92E4811F6717F900BEB077 /* marsPicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marsPicsTests.swift; sourceTree = "<group>"; };
+		4B92E4831F6717F900BEB077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E5DA31ED9099148B663166D /* Pods-marsPics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marsPics.release.xcconfig"; path = "Pods/Target Support Files/Pods-marsPics/Pods-marsPics.release.xcconfig"; sourceTree = "<group>"; };
+		A066468E4890A51BF00C24DC /* Pods_marsPicsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marsPicsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B92E4661F6717F900BEB077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF522ABFFC7564D16471516D /* Pods_marsPics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B92E47A1F6717F900BEB077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E4FDE525B09241B9992D0D /* Pods_marsPicsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47D54B59CFDABE600E386E7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4270D9BF6E04C672E5ED2835 /* Pods-marsPics.debug.xcconfig */,
+				6E5DA31ED9099148B663166D /* Pods-marsPics.release.xcconfig */,
+				34FD250E12B85A72DA746484 /* Pods-marsPicsTests.debug.xcconfig */,
+				01ECADC1E9B540A9C0128C86 /* Pods-marsPicsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B92E4601F6717F900BEB077 = {
+			isa = PBXGroup;
+			children = (
+				4B92E46B1F6717F900BEB077 /* marsPics */,
+				4B92E4801F6717F900BEB077 /* marsPicsTests */,
+				4B92E46A1F6717F900BEB077 /* Products */,
+				47D54B59CFDABE600E386E7F /* Pods */,
+				93300A1F0DD9314E7B2E4EC8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4B92E46A1F6717F900BEB077 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B92E4691F6717F900BEB077 /* marsPics.app */,
+				4B92E47D1F6717F900BEB077 /* marsPicsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B92E46B1F6717F900BEB077 /* marsPics */ = {
+			isa = PBXGroup;
+			children = (
+				4B92E46C1F6717F900BEB077 /* AppDelegate.swift */,
+				4B92E46E1F6717F900BEB077 /* ViewController.swift */,
+				4B92E4701F6717F900BEB077 /* Main.storyboard */,
+				4B92E4731F6717F900BEB077 /* Assets.xcassets */,
+				4B92E4751F6717F900BEB077 /* LaunchScreen.storyboard */,
+				4B92E4781F6717F900BEB077 /* Info.plist */,
+			);
+			path = marsPics;
+			sourceTree = "<group>";
+		};
+		4B92E4801F6717F900BEB077 /* marsPicsTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B92E4811F6717F900BEB077 /* marsPicsTests.swift */,
+				4B92E4831F6717F900BEB077 /* Info.plist */,
+			);
+			path = marsPicsTests;
+			sourceTree = "<group>";
+		};
+		93300A1F0DD9314E7B2E4EC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				002AB9EA153780A135AE2E64 /* Pods_marsPics.framework */,
+				A066468E4890A51BF00C24DC /* Pods_marsPicsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B92E4681F6717F900BEB077 /* marsPics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B92E4861F6717F900BEB077 /* Build configuration list for PBXNativeTarget "marsPics" */;
+			buildPhases = (
+				50C694A82C81A5008DA6BD21 /* [CP] Check Pods Manifest.lock */,
+				4B92E4651F6717F900BEB077 /* Sources */,
+				4B92E4661F6717F900BEB077 /* Frameworks */,
+				4B92E4671F6717F900BEB077 /* Resources */,
+				2033DD27916502E2BBCFAAAB /* [CP] Embed Pods Frameworks */,
+				D7642E4F4B4EA370297A8CCA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = marsPics;
+			productName = marsPics;
+			productReference = 4B92E4691F6717F900BEB077 /* marsPics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B92E47C1F6717F900BEB077 /* marsPicsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B92E4891F6717F900BEB077 /* Build configuration list for PBXNativeTarget "marsPicsTests" */;
+			buildPhases = (
+				61C26442BEF6B9FF8895E1E3 /* [CP] Check Pods Manifest.lock */,
+				4B92E4791F6717F900BEB077 /* Sources */,
+				4B92E47A1F6717F900BEB077 /* Frameworks */,
+				4B92E47B1F6717F900BEB077 /* Resources */,
+				FF874DB835DFE7097B8F85F9 /* [CP] Embed Pods Frameworks */,
+				A74CC585FF73A828866338EC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B92E47F1F6717F900BEB077 /* PBXTargetDependency */,
+			);
+			name = marsPicsTests;
+			productName = marsPicsTests;
+			productReference = 4B92E47D1F6717F900BEB077 /* marsPicsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B92E4611F6717F900BEB077 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Brian D Keane";
+				TargetAttributes = {
+					4B92E4681F6717F900BEB077 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = FSRSPV9N9Q;
+						ProvisioningStyle = Automatic;
+					};
+					4B92E47C1F6717F900BEB077 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = FSRSPV9N9Q;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4B92E4681F6717F900BEB077;
+					};
+				};
+			};
+			buildConfigurationList = 4B92E4641F6717F900BEB077 /* Build configuration list for PBXProject "marsPics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B92E4601F6717F900BEB077;
+			productRefGroup = 4B92E46A1F6717F900BEB077 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B92E4681F6717F900BEB077 /* marsPics */,
+				4B92E47C1F6717F900BEB077 /* marsPicsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B92E4671F6717F900BEB077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B92E4771F6717F900BEB077 /* LaunchScreen.storyboard in Resources */,
+				4B92E4741F6717F900BEB077 /* Assets.xcassets in Resources */,
+				4B92E4721F6717F900BEB077 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B92E47B1F6717F900BEB077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2033DD27916502E2BBCFAAAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-marsPics/Pods-marsPics-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-marsPics/Pods-marsPics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50C694A82C81A5008DA6BD21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-marsPics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61C26442BEF6B9FF8895E1E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-marsPicsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A74CC585FF73A828866338EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-marsPicsTests/Pods-marsPicsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7642E4F4B4EA370297A8CCA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-marsPics/Pods-marsPics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF874DB835DFE7097B8F85F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-marsPicsTests/Pods-marsPicsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B92E4651F6717F900BEB077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B92E46F1F6717F900BEB077 /* ViewController.swift in Sources */,
+				4B92E46D1F6717F900BEB077 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B92E4791F6717F900BEB077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B92E4821F6717F900BEB077 /* marsPicsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B92E47F1F6717F900BEB077 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B92E4681F6717F900BEB077 /* marsPics */;
+			targetProxy = 4B92E47E1F6717F900BEB077 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B92E4701F6717F900BEB077 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B92E4711F6717F900BEB077 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B92E4751F6717F900BEB077 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B92E4761F6717F900BEB077 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B92E4841F6717F900BEB077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B92E4851F6717F900BEB077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B92E4871F6717F900BEB077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4270D9BF6E04C672E5ED2835 /* Pods-marsPics.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FSRSPV9N9Q;
+				INFOPLIST_FILE = marsPics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fm.playola.marsPics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4B92E4881F6717F900BEB077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E5DA31ED9099148B663166D /* Pods-marsPics.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FSRSPV9N9Q;
+				INFOPLIST_FILE = marsPics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fm.playola.marsPics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4B92E48A1F6717F900BEB077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34FD250E12B85A72DA746484 /* Pods-marsPicsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FSRSPV9N9Q;
+				INFOPLIST_FILE = marsPicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fm.playola.marsPicsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marsPics.app/marsPics";
+			};
+			name = Debug;
+		};
+		4B92E48B1F6717F900BEB077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01ECADC1E9B540A9C0128C86 /* Pods-marsPicsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FSRSPV9N9Q;
+				INFOPLIST_FILE = marsPicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fm.playola.marsPicsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marsPics.app/marsPics";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B92E4641F6717F900BEB077 /* Build configuration list for PBXProject "marsPics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B92E4841F6717F900BEB077 /* Debug */,
+				4B92E4851F6717F900BEB077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B92E4861F6717F900BEB077 /* Build configuration list for PBXNativeTarget "marsPics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B92E4871F6717F900BEB077 /* Debug */,
+				4B92E4881F6717F900BEB077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4B92E4891F6717F900BEB077 /* Build configuration list for PBXNativeTarget "marsPicsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B92E48A1F6717F900BEB077 /* Debug */,
+				4B92E48B1F6717F900BEB077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B92E4611F6717F900BEB077 /* Project object */;
+}
