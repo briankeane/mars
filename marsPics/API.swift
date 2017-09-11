@@ -14,7 +14,7 @@ public class PlayolaAPI:NSObject
 {
     // temporary
     var baseURL = "https://api.nasa.gov"
-    var API_KEY = ""
+    var API_KEY = NASA_API_KEY
     // -----------------------------------------------------------------------------
     //                          func getMe
     // -----------------------------------------------------------------------------
