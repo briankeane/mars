@@ -17,6 +17,7 @@
 		D48868891F671C1000BB12E5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48868881F671C1000BB12E5 /* MainViewController.swift */; };
 		D488688B1F671C2F00BB12E5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488688A1F671C2F00BB12E5 /* DetailViewController.swift */; };
 		D488688D1F671E4000BB12E5 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488688C1F671E4000BB12E5 /* PhotoInfo.swift */; };
+		D488688F1F67275F00BB12E5 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488688E1F67275F00BB12E5 /* APIKeys.swift */; };
 		EF522ABFFC7564D16471516D /* Pods_marsPics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002AB9EA153780A135AE2E64 /* Pods_marsPics.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		D48868881F671C1000BB12E5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D488688A1F671C2F00BB12E5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D488688C1F671E4000BB12E5 /* PhotoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
+		D488688E1F67275F00BB12E5 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				4B92E46C1F6717F900BEB077 /* AppDelegate.swift */,
 				4B92E46E1F6717F900BEB077 /* ViewController.swift */,
+				D488688E1F67275F00BB12E5 /* APIKeys.swift */,
 				4B92E4701F6717F900BEB077 /* Main.storyboard */,
 				D488688C1F671E4000BB12E5 /* PhotoInfo.swift */,
 				D48868881F671C1000BB12E5 /* MainViewController.swift */,
@@ -350,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D488688F1F67275F00BB12E5 /* APIKeys.swift in Sources */,
 				D48868891F671C1000BB12E5 /* MainViewController.swift in Sources */,
 				4B92E46F1F6717F900BEB077 /* ViewController.swift in Sources */,
 				4B92E46D1F6717F900BEB077 /* AppDelegate.swift in Sources */,
