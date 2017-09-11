@@ -8,6 +8,7 @@ target 'marsPics' do
   # Pods for marsPics
   pod 'Alamofire', '4.5.0'
   pod 'PromiseKit', '~> 4.0'
+  pod 'HanekeSwift', :git => 'https://github.com/Haneke/HanekeSwift', :branch => 'feature/swift-3'
   
   target 'marsPicsTests' do
     inherit! :search_paths

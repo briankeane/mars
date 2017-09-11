@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HanekeSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-marsPics.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +32,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>66A8114A53B13ADE0695B938A9AB8CAD</key>
+		<key>2E9257CC7820BD3EA668CC9B164BA958</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8AC5F382E5AC2A5EE7953B11DE082E8C</key>
+		<key>A373AEFA952D2193A28A506BB66CFB5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A373AEFA952D2193A28A506BB66CFB5B</key>
+		<key>AE4759774042D8E013517E82C6F7A058</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FAF35F30A67E0F7E4C57FADBDA0C40E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

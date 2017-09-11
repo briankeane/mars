@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Haneke
 
 class MainViewController: ViewController, UITableViewDelegate, UITableViewDataSource
 {
@@ -16,9 +17,6 @@ class MainViewController: ViewController, UITableViewDelegate, UITableViewDataSo
   
     @IBAction func goButtonPressed(_ sender: Any) {
         self.makeRequest()
-    
-    
-    
     }
   
     var photoInfos: [PhotoInfo] = Array()
@@ -45,11 +43,19 @@ class MainViewController: ViewController, UITableViewDelegate, UITableViewDataSo
                             PhotoInfo(id: "3", urlString: "http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/fcam/FLB_486265257EDR_F0481570FHAZ00323M_.JPG", earthDate: Date(), cameraName: "Camera 3"),
                             PhotoInfo(id: "4", urlString: "http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/rcam/RRB_486265291EDR_F0481570RHAZ00323M_.JPG", earthDate: Date(), cameraName: "Camera 4")
                         ]
+        self.pictureTable.reloadData()
     }
     
     // The following required by UITableViewDelegate and UITableViewDataSource in class
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let photoInfo = self.photoInfos[indexPath.row]
+
+        let cell = self.pictureTable.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PhotoInfoTableViewCell
+        cell.idLabel.text = photoInfo.id
+        cell.cameraNameLabel.text = photoInfo.cameraName
+        cell.photoImageView.hnk_setImageFromURL(URL(string: photoInfo.urlString)!)
+        return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
