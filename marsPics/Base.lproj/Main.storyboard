@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -49,6 +50,58 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="es2-Ed-56Z">
                                 <rect key="frame" x="0.0" y="232" width="375" height="435"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="100" id="zUa-aY-VP5" customClass="PhotoInfoTableViewCell" customModule="marsPics" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zUa-aY-VP5" id="Cwq-hF-2GW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tKe-XL-X6w">
+                                                    <rect key="frame" x="215" y="-5" width="160" height="109"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="gCL-HH-BbF"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffz-ei-Avz">
+                                                    <rect key="frame" x="45" y="8" width="109" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="ddT-ZV-fE6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGu-ib-FAD">
+                                                    <rect key="frame" x="39" y="40" width="121" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="JVy-Ww-Xeh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tKe-XL-X6w" firstAttribute="leading" secondItem="ffz-ei-Avz" secondAttribute="trailing" constant="61" id="2Ym-OS-UDe"/>
+                                                <constraint firstItem="ffz-ei-Avz" firstAttribute="top" secondItem="Cwq-hF-2GW" secondAttribute="topMargin" id="JI7-Sq-nHV"/>
+                                                <constraint firstItem="ffz-ei-Avz" firstAttribute="leading" secondItem="Cwq-hF-2GW" secondAttribute="leadingMargin" constant="37" id="NfW-ds-xM1"/>
+                                                <constraint firstItem="fGu-ib-FAD" firstAttribute="leading" secondItem="Cwq-hF-2GW" secondAttribute="leadingMargin" constant="31" id="Rez-tZ-qmO"/>
+                                                <constraint firstItem="tKe-XL-X6w" firstAttribute="leading" secondItem="fGu-ib-FAD" secondAttribute="trailing" constant="55" id="V7V-g3-WAr"/>
+                                                <constraint firstItem="tKe-XL-X6w" firstAttribute="top" secondItem="Cwq-hF-2GW" secondAttribute="top" constant="-5" id="Yrb-02-mHT"/>
+                                                <constraint firstAttribute="bottom" secondItem="tKe-XL-X6w" secondAttribute="bottom" constant="-4" id="j9q-0T-Zni"/>
+                                                <constraint firstItem="fGu-ib-FAD" firstAttribute="top" secondItem="ffz-ei-Avz" secondAttribute="bottom" constant="11" id="lrv-27-XzV"/>
+                                                <constraint firstAttribute="trailing" secondItem="tKe-XL-X6w" secondAttribute="trailing" id="y5N-iR-DMT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cameraNameLabel" destination="ffz-ei-Avz" id="B8B-yt-Kzg"/>
+                                            <outlet property="idLabel" destination="fGu-ib-FAD" id="tu1-mM-Leb"/>
+                                            <outlet property="photoImageView" destination="tKe-XL-X6w" id="jpp-lG-xGI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqm-xe-sR0">
                                 <rect key="frame" x="162" y="181" width="51" height="30"/>
@@ -57,6 +110,9 @@
                                     <constraint firstAttribute="height" constant="30" id="xyJ-i2-2jT"/>
                                 </constraints>
                                 <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="goButtonPressed:" destination="D1b-f9-4IA" eventType="touchUpInside" id="gkD-qQ-CCd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -74,6 +130,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="8dp-dC-0Hr"/>
                     <connections>
+                        <outlet property="datePicker" destination="y0w-7f-Opj" id="6Ns-nK-Z6g"/>
+                        <outlet property="goButton" destination="hqm-xe-sR0" id="chd-QH-2yS"/>
+                        <outlet property="pictureTable" destination="es2-Ed-56Z" id="KdZ-pP-Ykt"/>
                         <segue destination="xox-0S-6kA" kind="show" id="L7J-By-oo7"/>
                     </connections>
                 </viewController>

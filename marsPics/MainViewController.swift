@@ -11,6 +11,21 @@ import UIKit
 class MainViewController: ViewController
 {
 
+  
+  @IBOutlet weak var datePicker: UIDatePicker!
+  
+  @IBOutlet weak var pictureTable: UITableView!
+  
+  @IBOutlet weak var goButton: UIButton!
+  
+  
+  @IBAction func goButtonPressed(_ sender: Any) {
+    self.makeRequest()
+    
+    
+    
+  }
+  
   var photoInfos: [PhotoInfo] = Array()
   
   override func viewDidLoad()
@@ -33,8 +48,7 @@ class MainViewController: ViewController
                         PhotoInfo(id: "2", urlString: "http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/fcam/FRB_486265257EDR_F0481570FHAZ00323M_.JPG", earthDate: Date(), cameraName: "Camera 2"),
                         PhotoInfo(id: "3", urlString: "http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/fcam/FLB_486265257EDR_F0481570FHAZ00323M_.JPG", earthDate: Date(), cameraName: "Camera 3"),
                         PhotoInfo(id: "4", urlString: "http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/rcam/RRB_486265291EDR_F0481570RHAZ00323M_.JPG", earthDate: Date(), cameraName: "Camera 4")
-      
                       ]
-    
+    print("Request Made")
   }
 }
