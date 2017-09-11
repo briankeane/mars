@@ -19,15 +19,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PromiseKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4643D5FC93707FE23FA4FBB2493A178D</key>
+		<key>66A8114A53B13ADE0695B938A9AB8CAD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8AC5F382E5AC2A5EE7953B11DE082E8C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
