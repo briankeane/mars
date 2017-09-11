@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import Haneke
 
 class DetailViewController: ViewController {
+    
+    var urlString: String = ""
 
+    @IBOutlet weak var marsImageView: UIImageView!
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.marsImageView.hnk_setImageFromURL(URL(string: urlString)!)
     }
 
     override func didReceiveMemoryWarning()

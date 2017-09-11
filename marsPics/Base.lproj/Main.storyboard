@@ -133,7 +133,7 @@
                         <outlet property="datePicker" destination="y0w-7f-Opj" id="6Ns-nK-Z6g"/>
                         <outlet property="goButton" destination="hqm-xe-sR0" id="chd-QH-2yS"/>
                         <outlet property="pictureTable" destination="es2-Ed-56Z" id="KdZ-pP-Ykt"/>
-                        <segue destination="xox-0S-6kA" kind="show" id="L7J-By-oo7"/>
+                        <segue destination="xox-0S-6kA" kind="show" identifier="MainToDetailViewSegue" id="L7J-By-oo7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khM-bL-Zfj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -152,8 +152,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NIP-O3-mAx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NIP-O3-mAx">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="L9t-n5-wj7"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -164,6 +167,9 @@
                             <constraint firstAttribute="trailing" secondItem="NIP-O3-mAx" secondAttribute="trailing" id="tdi-FN-5q2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="marsImageView" destination="NIP-O3-mAx" id="5fM-xA-uN2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q9o-4z-0hP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

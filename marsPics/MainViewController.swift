@@ -20,6 +20,8 @@ class MainViewController: ViewController, UITableViewDelegate, UITableViewDataSo
     }
   
     var photoInfos: [PhotoInfo] = Array()
+    
+    var photoUrl: String = ""
   
     override func viewDidLoad()
     {
@@ -36,15 +38,22 @@ class MainViewController: ViewController, UITableViewDelegate, UITableViewDataSo
   
     func makeRequest()
     {
-   
-        self.photoInfos = [
-                            PhotoInfo(id: "1", urlString: "http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/fcam/FLB_486265257EDR_F0481570FHAZ00323M_.JPG", earthDate: Date(), cameraName: "Camera 1"),
-                            PhotoInfo(id: "2", urlString: "http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/fcam/FRB_486265257EDR_F0481570FHAZ00323M_.JPG", earthDate: Date(), cameraName: "Camera 2"),
-                            PhotoInfo(id: "3", urlString: "http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/fcam/FLB_486265257EDR_F0481570FHAZ00323M_.JPG", earthDate: Date(), cameraName: "Camera 3"),
-                            PhotoInfo(id: "4", urlString: "http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/rcam/RRB_486265291EDR_F0481570RHAZ00323M_.JPG", earthDate: Date(), cameraName: "Camera 4")
-                        ]
-        self.pictureTable.reloadData()
-    }
+        let api = NasaAPI()
+        api.getPhotos(date: self.datePicker.date)
+        .then
+        {
+            (photoInfosArray) -> Void in
+            // handle here
+            self.photoInfos = photoInfosArray
+            self.pictureTable.reloadData()
+        }
+        .catch
+        {
+            (error) -> Void in
+            // handle error here
+                
+        }
+            }
     
     // The following required by UITableViewDelegate and UITableViewDataSource in class
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -64,6 +73,18 @@ class MainViewController: ViewController, UITableViewDelegate, UITableViewDataSo
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        photoUrl = self.photoInfos[indexPath.row].urlString
+        self.performSegue(withIdentifier: "MainToDetailViewSegue", sender: self)  // Does actual seguey
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MainToDetailViewSegue"
+        {
+            (segue.destination as! DetailViewController).urlString = self.photoUrl
+        }
     }
     
 }
