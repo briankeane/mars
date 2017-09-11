@@ -4,3 +4,26 @@ marsPics.xcworkspace/xcuserdata/briankeane.xcuserdata/UserInterfaceState.xcusers
 marsPics.xcworkspace/xcuserdata/briankeane.xcuserdatad/UserInterfaceState.xcuserstate
 marsPics.xcworkspace/xcuserdata/barrykeane.xcuserdatad/UserInterfaceState.xcuserstate
 Pods/Pods.xcodeproj/xcuserdata/barrykeane.xcuserdatad/xcschemes/PromiseKit.xcscheme
+
+# Xcode per-user config
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+xcuserdata
+
+# Build products
+build/
+*.o
+*.LinkFileList
+*.hmap
+
+# Automatic backup files
+*~.nib/
+*.swp
+*~
+*.dat
+*.dep
