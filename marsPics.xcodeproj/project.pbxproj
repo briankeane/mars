@@ -19,6 +19,7 @@
 		D488688B1F671C2F00BB12E5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488688A1F671C2F00BB12E5 /* DetailViewController.swift */; };
 		D488688D1F671E4000BB12E5 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488688C1F671E4000BB12E5 /* PhotoInfo.swift */; };
 		D48868931F672C6D00BB12E5 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48868921F672C6D00BB12E5 /* APIKeys.swift */; };
+		D48868951F673D0100BB12E5 /* PhotoInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48868941F673D0100BB12E5 /* PhotoInfoTableViewCell.swift */; };
 		EF522ABFFC7564D16471516D /* Pods_marsPics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002AB9EA153780A135AE2E64 /* Pods_marsPics.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		D488688A1F671C2F00BB12E5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D488688C1F671E4000BB12E5 /* PhotoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
 		D48868921F672C6D00BB12E5 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		D48868941F673D0100BB12E5 /* PhotoInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				4B92E46C1F6717F900BEB077 /* AppDelegate.swift */,
 				4B92E46E1F6717F900BEB077 /* ViewController.swift */,
 				4B92E4701F6717F900BEB077 /* Main.storyboard */,
+				D48868941F673D0100BB12E5 /* PhotoInfoTableViewCell.swift */,
 				D488688C1F671E4000BB12E5 /* PhotoInfo.swift */,
 				D48868881F671C1000BB12E5 /* MainViewController.swift */,
 				D488688A1F671C2F00BB12E5 /* DetailViewController.swift */,
@@ -358,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48868951F673D0100BB12E5 /* PhotoInfoTableViewCell.swift in Sources */,
 				D48868891F671C1000BB12E5 /* MainViewController.swift in Sources */,
 				4B92E46F1F6717F900BEB077 /* ViewController.swift in Sources */,
 				D48868931F672C6D00BB12E5 /* APIKeys.swift in Sources */,
