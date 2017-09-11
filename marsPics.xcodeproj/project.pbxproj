@@ -13,6 +13,7 @@
 		4B92E4741F6717F900BEB077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B92E4731F6717F900BEB077 /* Assets.xcassets */; };
 		4B92E4771F6717F900BEB077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B92E4751F6717F900BEB077 /* LaunchScreen.storyboard */; };
 		4B92E4821F6717F900BEB077 /* marsPicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B92E4811F6717F900BEB077 /* marsPicsTests.swift */; };
+		4B92E48D1F6723B300BEB077 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B92E48C1F6723B300BEB077 /* API.swift */; };
 		92E4FDE525B09241B9992D0D /* Pods_marsPicsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A066468E4890A51BF00C24DC /* Pods_marsPicsTests.framework */; };
 		EF522ABFFC7564D16471516D /* Pods_marsPics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002AB9EA153780A135AE2E64 /* Pods_marsPics.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		4B92E47D1F6717F900BEB077 /* marsPicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marsPicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B92E4811F6717F900BEB077 /* marsPicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marsPicsTests.swift; sourceTree = "<group>"; };
 		4B92E4831F6717F900BEB077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B92E48C1F6723B300BEB077 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		6E5DA31ED9099148B663166D /* Pods-marsPics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marsPics.release.xcconfig"; path = "Pods/Target Support Files/Pods-marsPics/Pods-marsPics.release.xcconfig"; sourceTree = "<group>"; };
 		A066468E4890A51BF00C24DC /* Pods_marsPicsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marsPicsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +108,7 @@
 				4B92E4731F6717F900BEB077 /* Assets.xcassets */,
 				4B92E4751F6717F900BEB077 /* LaunchScreen.storyboard */,
 				4B92E4781F6717F900BEB077 /* Info.plist */,
+				4B92E48C1F6723B300BEB077 /* API.swift */,
 			);
 			path = marsPics;
 			sourceTree = "<group>";
@@ -243,10 +246,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-marsPics/Pods-marsPics-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -342,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B92E46F1F6717F900BEB077 /* ViewController.swift in Sources */,
+				4B92E48D1F6723B300BEB077 /* API.swift in Sources */,
 				4B92E46D1F6717F900BEB077 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,6 +562,7 @@
 				4B92E4881F6717F900BEB077 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B92E4891F6717F900BEB077 /* Build configuration list for PBXNativeTarget "marsPicsTests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +571,7 @@
 				4B92E48B1F6717F900BEB077 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
